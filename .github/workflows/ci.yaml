@@ -13,6 +13,8 @@ jobs:
         include:
           - arch: x86_64-linux
             os: ubuntu-latest
+          - arch: x86_64-darwin
+            os: macOS-latest-xl
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
