@@ -15,8 +15,3 @@ jobs:
       - uses: nixbuild/nixbuild-action@v17
         with:
           nixbuild_ssh_key: ${{ secrets.nixbuild_ssh_key }}
-      - uses: cachix/cachix-action@v12
-        with:
-          name: srid
-      - name: Build 🔨
-        run: nix run github:srid/nixci
